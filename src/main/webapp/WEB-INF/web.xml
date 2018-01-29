@@ -1,0 +1,55 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!--<listener>-->
+    <!--<listener-class>com.servlet.listener.MyRequestListener</listener-class>-->
+  <!--</listener>-->
+
+  <servlet>
+    <servlet-name>servlet</servlet-name>
+    <servlet-class>com.tuhao.base.Demo1</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>photo</servlet-name>
+    <servlet-class>com.tuhao.base.Photo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>demo2</servlet-name>
+    <servlet-class>com.tuhao.base.Demo2</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>json</servlet-name>
+    <servlet-class>com.tuhao.controller.DataController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>json</servlet-name>
+    <url-pattern>/json</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>demo2</servlet-name>
+    <url-pattern>/demo2</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>servlet</servlet-name>
+    <url-pattern>/demo1</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>photo</servlet-name>
+    <url-pattern>/photo</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+</web-app>

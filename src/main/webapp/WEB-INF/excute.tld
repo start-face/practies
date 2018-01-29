@@ -1,0 +1,11 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.0</jsp-version>
+    <short-name>simple</short-name>
+    <uri>http://java.sun.com/jsp/jstl/excute</uri>
+    <tag>
+        <name>excute</name>
+        <tag-class>com.tuhao.controller.ExcuteTag</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+</taglib>
